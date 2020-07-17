@@ -1,1 +1,114 @@
-/*  */
+/* Цвета */
+
+:root {
+  --main-text: #757575;
+  --secondary-text: #212121;
+  --white: #ffffff;
+  --accent: #2196f3;
+  --additional: #000000;
+  --background-section: #f5f4fa;
+  --background-footer: #2f303a;
+}
+/* Шрифты
+font-family: "Roboto", sans-serif;
+font-family: "Raleway", sans-serif; */
+
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/raleway/raleway-v17-latin-cyrillic-700.woff")
+      format("woff"),
+    url("../fonts/raleway/raleway-v17-latin-cyrillic-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+
+  color: var(--main-text);
+}
+
+address {
+  font-style: normal;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  color: var(--additional);
+}
+
+.logo > span {
+  color: var(--accent);
+}
+
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white);
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  color: var(--secondary-text);
+}
+
+.navigation-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text);
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent);
+}
+
+.navigation-contacts {
+  color: var(--main-text);
+}
+
+.hero {
+  background-color: darkgrey;
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.363;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.features-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: var(--secondary-text);
+}
