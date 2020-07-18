@@ -4,11 +4,13 @@
   --main-text: #757575;
   --secondary-text: #212121;
   --white: #ffffff;
+  --alpha-white: #ffffff99;
   --accent: #2196f3;
   --additional: #000000;
   --background-section: #f5f4fa;
   --background-footer: #2f303a;
 }
+
 /* Шрифты
 font-family: "Roboto", sans-serif;
 font-family: "Raleway", sans-serif; */
@@ -76,6 +78,15 @@ address {
   color: var(--secondary-text);
 }
 
+b,
+.services-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
 .navigation-link {
   font-weight: 500;
   font-size: 14px;
@@ -111,4 +122,83 @@ address {
   line-height: 1.142;
   text-transform: uppercase;
   color: var(--secondary-text);
+}
+
+.services {
+  background-color: darkgrey;
+}
+
+.services-title {
+  text-align: center;
+}
+
+.team {
+  background-color: var(--background-section);
+}
+
+.team-name,
+.team-position {
+  font-size: 16px;
+  line-height: 1.187;
+  text-align: center;
+}
+
+.team-name {
+  font-weight: 500;
+  color: var(--secondary-text);
+}
+
+.page-footer {
+  background-color: var(--background-footer);
+}
+
+.logo-footer {
+  color: var(--white);
+}
+
+.local-address {
+  color: var(--white);
+}
+
+.address-link {
+  color: var(--alpha-white);
+}
+
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent);
+}
+
+/* Стили страницы Портфолио */
+
+.type-btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  color: var(--secondary-text);
+  background: var(--background-section);
+  border-radius: 4px;
+}
+
+.type-btn:hover,
+.type-btn:focus {
+  color: var(--white);
+  background: var(--accent);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
+}
+
+.projects-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--secondary-text);
+}
+
+.projects-class {
+  font-size: 16px;
+  line-height: 1.875;
+  color: var(--main-text);
 }
